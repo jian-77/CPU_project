@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue May  7 15:12:27 2024
+# Process ID: 32432
+# Current directory: D:/vivado/CPU_project
+# Command line: wbtcv.exe -mode batch -source D:/vivado/CPU/project_1.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: D:/vivado/CPU_project/webtalk.log
+# Journal file: D:/vivado/CPU_project\webtalk.jou
+#-----------------------------------------------------------
+source D:/vivado/CPU/project_1.hw/webtalk/labtool_webtalk.tcl -notrace

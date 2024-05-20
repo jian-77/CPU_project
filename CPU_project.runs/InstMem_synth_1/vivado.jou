@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May 19 11:57:08 2024
+# Process ID: 17644
+# Current directory: D:/vivado/CPU_project/CPU_project.runs/InstMem_synth_1
+# Command line: vivado.exe -log InstMem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InstMem.tcl
+# Log file: D:/vivado/CPU_project/CPU_project.runs/InstMem_synth_1/InstMem.vds
+# Journal file: D:/vivado/CPU_project/CPU_project.runs/InstMem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source InstMem.tcl -notrace

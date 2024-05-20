@@ -1,0 +1,20 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/vivado/CPU_project/CPU_project.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sim_1/new/Ifetch_sim.v,1716101649,verilog,,,,Ifetch_sim,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sim_1/new/clk_sim.v,1716101481,verilog,,,,clk_sim,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/sim/InstMem.v,1716091026,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/ALU.v,,InstMem,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/RAM/sim/RAM.v,1715429027,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,,RAM,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk.v,1715066743,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/ALU.v,,cpuclk,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,1715066743,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk.v,,cpuclk_clk_wiz,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/ALU.v,1715947476,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/ALUControl.v,,ALU,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/ALUControl.v,1716089451,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/ALUMain.v,,ALUControl,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/ALUMain.v,1716091038,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/Controller.v,,ALUMain,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/Controller.v,1716091447,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/DMem.v,,Controller,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/DMem.v,1715429341,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/Decoder.v,,DMem,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/Decoder.v,1716090554,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/MUX.v,,Decoder;ImmGen;RegisterFile;WB,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/IFetch.v,1715845921,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/MUX.v,,IFetch,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/MUX.v,1715846677,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/top.v,,MUX,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/top.v,1716101838,verilog,,D:/vivado/CPU_project/CPU_project.srcs/sim_1/new/Ifetch_sim.v,,top,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,

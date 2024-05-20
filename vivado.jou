@@ -1,0 +1,153 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu May 16 14:44:59 2024
+# Process ID: 25208
+# Current directory: D:/vivado/CPU_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11156 D:\vivado\CPU_project\CPU_project.xpr
+# Log file: D:/vivado/CPU_project/vivado.log
+# Journal file: D:/vivado/CPU_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/CPU_project/CPU_project.xpr
+update_compile_order -fileset sources_1
+close [ open D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/top.v w ]
+add_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/top.v
+update_compile_order -fileset sources_1
+close [ open D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/IMem.v w ]
+add_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/IMem.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/IMem.v] -no_script -reset -force -quiet
+remove_files  D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/IMem.v
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/vivado/CPU_project/prgrom32.coe}] [get_ips InstMem]
+generate_target all [get_files  D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci]
+catch { config_ip_cache -export [get_ips -all InstMem] }
+export_ip_user_files -of_objects [get_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci] -no_script -sync -force -quiet
+reset_run InstMem_synth_1
+launch_runs -jobs 8 InstMem_synth_1
+export_simulation -of_objects [get_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci] -directory D:/vivado/CPU_project/CPU_project.ip_user_files/sim_scripts -ip_user_files_dir D:/vivado/CPU_project/CPU_project.ip_user_files -ipstatic_source_dir D:/vivado/CPU_project/CPU_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/modelsim} {questa=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/questa} {riviera=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/riviera} {activehdl=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+file mkdir D:/vivado/CPU_project/CPU_project.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/vivado/CPU_project/CPU_project.srcs/sim_1/new/Ifetch_sim.v w ]
+add_files -fileset sim_1 D:/vivado/CPU_project/CPU_project.srcs/sim_1/new/Ifetch_sim.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Ifetch_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top IFetch [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Ifetch_sim.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Ifetch_sim.tcl
+close_sim
+launch_simulation
+source Ifetch_sim.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+source Ifetch_sim.tcl
+close_sim
+launch_simulation
+source Ifetch_sim.tcl
+add_wave {{/Ifetch_sim/top/decoder/immgen/instruction}} 
+run all
+relaunch_sim
+save_wave_config {D:/vivado/CPU_project/Ifetch_sim_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/vivado/CPU_project/Ifetch_sim_behav.wcfg
+set_property xsim.view D:/vivado/CPU_project/Ifetch_sim_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_project D:/vivado/piano/piano.xpr
+update_compile_order -fileset sources_1
+current_project CPU_project
+launch_simulation
+open_wave_config D:/vivado/CPU_project/Ifetch_sim_behav.wcfg
+source Ifetch_sim.tcl
+export_ip_user_files -of_objects  [get_files D:/vivado/CPU_project/Ifetch_sim_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/vivado/CPU_project/Ifetch_sim_behav.wcfg
+close_sim
+launch_simulation
+source Ifetch_sim.tcl
+add_wave {{/Ifetch_sim/top/decoder/immgen/instruction}} 
+add_wave {{/Ifetch_sim/top/decoder/immgen/immediate}} 
+add_wave {{/Ifetch_sim/top/decoder/immgen/opcode}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source Ifetch_sim.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+source Ifetch_sim.tcl
+add_wave {{/Ifetch_sim/top/decoder/instruction}} 
+relaunch_sim
+current_project piano
+close_project
+close_sim
+launch_simulation
+source Ifetch_sim.tcl
+add_wave {{/Ifetch_sim/top/decoder/RF/read_data1}} 
+add_wave {{/Ifetch_sim/top/decoder/RF/read_data2}} 
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+source Ifetch_sim.tcl
+add_wave {{/Ifetch_sim/top/decoder/RF/read_data1}} 
+add_wave {{/Ifetch_sim/top/decoder/RF/read_data2}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+close [ open D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/MemOrIO.v w ]
+add_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/new/MemOrIO.v
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coe_File {D:/vivado/CPU_project/testrom.coe}] [get_ips InstMem]
+generate_target all [get_files  D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci]
+catch { config_ip_cache -export [get_ips -all InstMem] }
+export_ip_user_files -of_objects [get_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci] -no_script -sync -force -quiet
+reset_run InstMem_synth_1
+launch_runs -jobs 8 InstMem_synth_1
+export_simulation -of_objects [get_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci] -directory D:/vivado/CPU_project/CPU_project.ip_user_files/sim_scripts -ip_user_files_dir D:/vivado/CPU_project/CPU_project.ip_user_files -ipstatic_source_dir D:/vivado/CPU_project/CPU_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/modelsim} {questa=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/questa} {riviera=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/riviera} {activehdl=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+source Ifetch_sim.tcl
+add_wave {{/Ifetch_sim/top/if1}} 
+relaunch_sim
+set_property -dict [list CONFIG.Coe_File {D:/vivado/CPU_project/Test/uart_tools/test_rom.coe}] [get_ips InstMem]
+generate_target all [get_files  D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci]
+catch { config_ip_cache -export [get_ips -all InstMem] }
+export_ip_user_files -of_objects [get_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci] -no_script -sync -force -quiet
+reset_run InstMem_synth_1
+launch_runs -jobs 8 InstMem_synth_1
+export_simulation -of_objects [get_files D:/vivado/CPU_project/CPU_project.srcs/sources_1/ip/InstMem/InstMem.xci] -directory D:/vivado/CPU_project/CPU_project.ip_user_files/sim_scripts -ip_user_files_dir D:/vivado/CPU_project/CPU_project.ip_user_files -ipstatic_source_dir D:/vivado/CPU_project/CPU_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/modelsim} {questa=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/questa} {riviera=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/riviera} {activehdl=D:/vivado/CPU_project/CPU_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+source Ifetch_sim.tcl
+add_wave {{/Ifetch_sim/top/decoder/RF/registers}} 
+relaunch_sim
+close_sim
+launch_simulation
+source Ifetch_sim.tcl

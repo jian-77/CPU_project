@@ -1,0 +1,11 @@
+addi x1,x1,-1
+addi x2,x2,2
+sub x3,x1,x2
+add x3,x2,x1
+xor x4,x1,x2
+and x5,x1,x2
+slli x6,x1,1
+srli x7,x1,1
+srai x8,x1,1
+lui x9,0xfffff
+auipc x10,0xfffff

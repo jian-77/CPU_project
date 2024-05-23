@@ -1,0 +1,37 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/InstMem/sim/InstMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUMain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUMain
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/DMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemOrIO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/debounce_button.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_button
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/light_7seg_tube.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module light_7seg_tube
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado/CPU_project-master/CPU_project.srcs/sim_1/new/Test_IO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_IO

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu May 23 15:43:33 2024
+| Date         : Sat May 25 22:09:24 2024
 | Host         : supreme running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    46 |
-| Unused register locations in slices containing registers |    52 |
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |    50 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             120 |           50 |
-| No           | No                    | Yes                    |              11 |            2 |
+| No           | No                    | No                     |             132 |           58 |
+| No           | No                    | Yes                    |               1 |            1 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              18 |            5 |
-| Yes          | No                    | Yes                    |            1023 |          493 |
+| Yes          | No                    | Yes                    |            1023 |          415 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -49,65 +49,60 @@ Table of Contents
 |                 Clock Signal                |              Enable Signal              | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +---------------------------------------------+-----------------------------------------+------------------+------------------+----------------+
 |  ifetch_instance/PC_reg[1]_0                |                                         |                  |                1 |              1 |
-|  clk1/inst/clk_out1                         |                                         |                  |                1 |              2 |
+|  old_clk_IBUF                               |                                         | rst_IBUF         |                1 |              1 |
 | ~clk1/inst/clk_out1                         |                                         |                  |                1 |              2 |
-|  ifetch_instance/seg_out2[7]_1[0]           |                                         |                  |                1 |              4 |
-|  memorio/sw2_reg[3]_i_2_n_1                 |                                         |                  |                1 |              4 |
-|  old_clk_IBUF                               |                                         | rst_IBUF         |                1 |              5 |
-|  clk1/inst/clk_out1                         |                                         | rst_IBUF         |                1 |              6 |
-|  ifetch_instance/seg_out2[7][0]             |                                         |                  |                4 |             12 |
-|  ifetch_instance/registers_reg[31][31]_1[0] |                                         |                  |                6 |             14 |
-|  ifetch_instance/E[0]                       |                                         |                  |                7 |             16 |
-|  ifetch_instance/E[1]                       |                                         |                  |                8 |             16 |
-|  ifetch_instance/led[15]_0[0]               |                                         |                  |                6 |             16 |
+|  clk1/inst/clk_out1                         |                                         |                  |                1 |              2 |
+|  ifetch_instance/seg_out2[3][0]             |                                         |                  |                2 |              4 |
+|  ifetch_instance/registers_reg[31][31]_2[0] |                                         |                  |                7 |             14 |
+|  ifetch_instance/E[0]                       |                                         |                  |                6 |             16 |
+|  ifetch_instance/registers_reg[31][31]_1[0] |                                         |                  |                7 |             16 |
+|  ifetch_instance/E[1]                       |                                         |                  |                5 |             16 |
 |  old_clk_IBUF                               | memorio/sel                             |                  |                5 |             18 |
+|  ifetch_instance/seg_out2[3]_0[0]           |                                         |                  |                9 |             28 |
 |  clk1/inst/clk_out1                         | ifetch_instance/next_PC                 | rst_IBUF         |                9 |             31 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[29][0][0] | rst_IBUF         |               17 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[14][0][0] | rst_IBUF         |               11 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[9][0][0]  | rst_IBUF         |               13 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[13][0][0] | rst_IBUF         |                5 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[16][0][0] | rst_IBUF         |               13 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[17][0][0] | rst_IBUF         |               10 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[18][0][0] | rst_IBUF         |               11 |             32 |
 | ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[19][0][0] | rst_IBUF         |               13 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[22][0][0] | rst_IBUF         |               13 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[23][0][0] | rst_IBUF         |               19 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[12][0][0] | rst_IBUF         |                9 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[24][0][0] | rst_IBUF         |               16 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[26][0][0] | rst_IBUF         |               15 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[30][0][0] | rst_IBUF         |               16 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[21][0][0] | rst_IBUF         |               21 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[25][0][0] | rst_IBUF         |               13 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[18][0][0] | rst_IBUF         |               17 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[15][0][0] | rst_IBUF         |               20 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[16][0][0] | rst_IBUF         |               14 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[4][0][0]  | rst_IBUF         |               14 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[7][0][0]  | rst_IBUF         |               26 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[9][0][0]  | rst_IBUF         |               19 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[3][0][0]  | rst_IBUF         |               11 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[8][0][0]  | rst_IBUF         |               17 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[6][0][0]  | rst_IBUF         |               15 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[5][0][0]  | rst_IBUF         |                9 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[1][0][0]  | rst_IBUF         |               12 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[17][0][0] | rst_IBUF         |               18 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[13][0][0] | rst_IBUF         |                8 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[2][0][0]  | rst_IBUF         |                9 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[10][0][0] | rst_IBUF         |               16 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[31][0][0] | rst_IBUF         |               24 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[20][0][0] | rst_IBUF         |               11 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[11][0][0] | rst_IBUF         |               29 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[27][0][0] | rst_IBUF         |               19 |             32 |
-| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[28][0][0] | rst_IBUF         |               13 |             32 |
-|  n_0_1378_BUFG                              |                                         |                  |               14 |             33 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[1][0][0]  | rst_IBUF         |               10 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[20][0][0] | rst_IBUF         |               12 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[21][0][0] | rst_IBUF         |               15 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[14][0][0] | rst_IBUF         |                8 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[23][0][0] | rst_IBUF         |               17 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[25][0][0] | rst_IBUF         |               12 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[24][0][0] | rst_IBUF         |               18 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[26][0][0] | rst_IBUF         |               10 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[15][0][0] | rst_IBUF         |               12 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[22][0][0] | rst_IBUF         |               18 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[10][0][0] | rst_IBUF         |                9 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[11][0][0] | rst_IBUF         |               26 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[12][0][0] | rst_IBUF         |                7 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[28][0][0] | rst_IBUF         |               16 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[7][0][0]  | rst_IBUF         |               30 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[27][0][0] | rst_IBUF         |               14 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[30][0][0] | rst_IBUF         |               19 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[6][0][0]  | rst_IBUF         |                9 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[29][0][0] | rst_IBUF         |               15 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[8][0][0]  | rst_IBUF         |                7 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[2][0][0]  | rst_IBUF         |               10 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[31][0][0] | rst_IBUF         |               16 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[3][0][0]  | rst_IBUF         |               10 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[4][0][0]  | rst_IBUF         |                9 |             32 |
+| ~clk1/inst/clk_out1                         | ifetch_instance/registers_reg[5][0][0]  | rst_IBUF         |               12 |             32 |
+|  n_0_1398_BUFG                              |                                         |                  |               19 |             33 |
 +---------------------------------------------+-----------------------------------------+------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     1 |
+| 1      |                     2 |
 | 2      |                     2 |
-| 4      |                     2 |
-| 5      |                     1 |
-| 6      |                     1 |
-| 12     |                     1 |
+| 4      |                     1 |
 | 14     |                     1 |
-| 16+    |                    37 |
+| 16+    |                    38 |
 +--------+-----------------------+
 
 

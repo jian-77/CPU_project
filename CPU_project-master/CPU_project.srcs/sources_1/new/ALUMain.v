@@ -35,14 +35,13 @@ module ALUMain(
            4'b0010: ALUResult=ReadData1^MUXResult;//xor
            4'b0011: ALUResult=ReadData1|MUXResult;//or
            4'b0100: ALUResult= ReadData1&MUXResult;//and
-           4'b0101: ALUResult=ReadData1<<MUXResult;//×óÒÆ
-           4'b0110: ALUResult=ReadData1>>MUXResult;//²¹ 0
-           4'b0111: ALUResult=ReadData1>>>MUXResult;//²¹sign
+           4'b0101: ALUResult=ReadData1<<MUXResult;//¡Á¨®??
+           4'b0110: ALUResult=ReadData1>>MUXResult;//?? 0
+           4'b0111: ALUResult=ReadData1>>>MUXResult;//??sign
            4'b1000: ALUResult=ReadData1<MUXResult?1'b1:1'b0;//slt
            4'b1001: ALUResult=$unsigned(ReadData1)<$unsigned(MUXResult)?1'b1:1'b0;//slt
            4'b1010:ALUResult=MUXResult;
-           4'b1011:ALUResult=$unsigned(ReadData1)-$unsigned(MUXResult);//subu
-           default:ALUResult=4'b1111;
+           default:ALUResult=0;
        endcase
     end
 
@@ -50,10 +49,10 @@ module ALUMain(
         case(funct3)
             3'b000:zero= ALUResult==0?1'b1:1'b0;
             3'b001:zero= ALUResult==0?1'b0:1'b1;
-            3'b100:zero=ALUResult<0?1'b1:1'b0;
-            3'b101:zero=ALUResult>=0?1'b1:1'b0;
-            3'b110:zero=ALUResult<0?1'b1:1'b0;
-            3'b111:zero=ALUResult>=0?1'b1:1'b0;
+            3'b100:zero=ReadData1<MUXResult?1'b1:1'b0;//blt
+            3'b101:zero=ReadData1>=MUXResult?1'b1:1'b0;//bge
+            3'b110:zero=$unsigned(ReadData1)<$unsigned(MUXResult)?1'b1:1'b0;//bltu
+            3'b111:zero=$unsigned(ReadData1)>=$unsigned(MUXResult)?1'b1:1'b0;//bgeu
         endcase
     end
   

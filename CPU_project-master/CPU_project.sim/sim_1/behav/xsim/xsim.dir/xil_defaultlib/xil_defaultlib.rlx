@@ -5,7 +5,7 @@ Dec 15 2017
 D:/vivado/CPU_project-master/CPU_project.sim/sim_1/behav/xsim/glbl.v,1716195164,verilog,,,,glbl,,,,,,,,
 D:/vivado/CPU_project-master/CPU_project.srcs/sim_1/new/Ifetch_sim.v,1716195167,verilog,,,,Ifetch_sim,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
 D:/vivado/CPU_project-master/CPU_project.srcs/sim_1/new/Test_IO.v,1716262997,verilog,,,,Test_IO,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
-D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/InstMem/sim/InstMem.v,1716359519,verilog,,D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,,InstMem,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
+D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/InstMem/sim/InstMem.v,1716475651,verilog,,D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,,InstMem,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
 D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/RAM/sim/RAM.v,1716195168,verilog,,D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/InstMem/sim/InstMem.v,,RAM,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
 D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk.v,1716195168,verilog,,D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALU.v,,cpuclk,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,
 D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,1716195169,verilog,,D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/ip/cpuclk/cpuclk.v,,cpuclk_clk_wiz,,,../../../../CPU_project.srcs/sources_1/ip/cpuclk,,,,,

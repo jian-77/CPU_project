@@ -42,6 +42,14 @@ add_files d:/vivado/CPU_project/Test/uart_tools/Test_Button.coe
 add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_2.coe
 add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_3.coe
 add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_4.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_5.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_6.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_7.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_8.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_sw.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_9.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_round.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_14.coe
 read_verilog -library xil_defaultlib {
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALU.v
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUControl.v
@@ -52,7 +60,6 @@ read_verilog -library xil_defaultlib {
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MUX.v
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v
-  D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/debounce_button.v
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/light_7seg_tube.v
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/top.v
 }

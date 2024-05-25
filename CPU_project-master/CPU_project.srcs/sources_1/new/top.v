@@ -91,7 +91,7 @@ Controller controller_instance (
       .funct3(funct3)
   );
 ALU alu(Read_Data1,Read_Data2,imm32,ALUOp, funct7, funct3, ALUsrc,Zero,ALUResult);
-DMem dmem(clk,mRead,mWrite,addr_out,write_data,m_rdata);
+DMem dmem(.clk(clk),.MemRead(mRead),.MemWrite(mWrite),.addr(addr_out),.din(write_data),.dout(m_rdata),.instruction(instruction),.funct3(funct3));
 MemOrIO memorio( 
     .write(MemWrite),
     .addr_in(ALUResult),

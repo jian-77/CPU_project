@@ -48,9 +48,7 @@ module ALUControl(
                endcase
            2'b01: ALUControlResult= 4'b0000;//lw or sw
            2'b10://B
-               if(funct3==3'b110 || funct3==3'b111 ) 
-               ALUControlResult= 4'b1011;
-               else ALUControlResult= 4'b0001;
+               ALUControlResult= 4'b0001;
            2'b11: ALUControlResult= 4'b1010;//U
         default:ALUControlResult=4'b1111;
      endcase     

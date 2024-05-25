@@ -46,22 +46,6 @@ output [7:0] seg_out;
 output [7:0] seg_out2;
 output reg[3:0]seg;
 output reg[3:0]seg2;
-wire key_pulse;
-wire key_left;
-wire key_right;
-wire key_select;
-debounce_button b1(clk,rst,transit,key_pulse);
-debounce_button b2(clk,rst,left_button,key_left);
-debounce_button b3(clk,rst,right_button,key_right);
-debounce_button b4(clk,rst,select_button,key_select);
-reg pre_pulse1;
-reg now_pulse1;
-reg pre_pulse2;
-reg now_pulse2;
-reg pre_pulse3;
-reg now_pulse3;
-reg pre_pulse4;
-reg now_pulse4;
 reg mode;
 reg select;
 reg [3:0]Test_case;
@@ -73,42 +57,43 @@ reg [3:0]t5;
 reg [3:0]t6;
 reg [3:0]t7;
 reg [3:0]t8;
-reg [3:0]sw;
-reg [3:0]sw2;
+reg [4:0]sw;
+reg [4:0]sw2;
 
  parameter   N = 18;      
  reg     [N-1 : 0]  regN; 
     // regN实现对100MHz的系统时钟的2^16分频
     always @ (*)    begin
+    seg = 4'b0000;
+    seg2 = 4'b0000;
+     sw = 5'b11111 ;
+     sw2 = 5'b11111 ; // 默认关闭所有段
+            
         if (select&& write)begin
         case (regN[N-1: N-2])
             2'b00:  begin
                 seg  =  4'b0001;
                 seg2  =  4'b0001;
-                sw =  t5;
-                sw2= t1;
+                sw = {1'b0,t5};
+                sw2= {1'b0,t1};
             end
             2'b01:  begin
                 seg  =  4'b0010;
                 seg2 = 4'b0010;
-                sw  =  t6;
-                sw2 = t2;
+                sw  =  {1'b0,t6};
+                sw2 = {1'b0,t2};
             end
             2'b10:  begin
                 seg =  4'b0100;
                 seg2= 4'b0100;
-                sw  =  t7;
-                sw2= t3;
+                sw = {1'b0,t7};
+                sw2= {1'b0,t3};
             end
             2'b11:  begin
                 seg =  4'b1000;
                 seg2=4'b1000;
-                sw  =  t8;
-                sw2=t4;
-            end
-            default:    begin
-                seg  =  4'b1111;
-                sw  =  t8;
+                sw = {1'b0,t8};
+                sw2= {1'b0,t4};
             end
         endcase
         end
@@ -116,7 +101,7 @@ reg [3:0]sw2;
             begin
                 seg =4'b0000;
                 seg2=4'b0001;
-                sw2=t1;
+                sw2={1'b0,t1};
             end
         else 
             begin
@@ -130,75 +115,13 @@ always @(posedge old_clk or posedge rst)
     begin 
         if (rst)
             begin 
-            pre_pulse1<=1'b0;
-            now_pulse1<=1'b0;
-//            pre_pulse2<=1'b0;
-//            now_pulse2<=1'b0;
-//            pre_pulse3<=1'b0;
-//            now_pulse3<=1'b0;
-            pre_pulse4<=1'b0;
-            now_pulse4<=1'b0;
-            mode<=1'b0;
             select<=1'b0;
-            mode<=1'b0;
-            select=1'b0;
-   //         seg<=4'b0001;
             end
         else 
         begin
-         regN    <=  regN + 1;                 
-//            if(seg==4'b1000) 
-//            begin seg<=4'b0001;
-//                  sw<=t5;
-//            end
-//            else if(seg==4'b0001)
-//            begin seg<=4'b0010;
-//                  sw<=t6;
-//            end
-//            else if(seg==4'b0010) 
-//            begin seg<=4'b0100;
-//                  sw<=t7;
-//            end
-//            else  
-//            begin seg<=4'b1000;
-//                  sw<=t8;
-//            end;
-            
-//            if(seg2==4'b1000) begin seg2<=4'b0001;
-//            sw2<=t1; end
-//            else if(seg2==4'b0001) begin seg2<=4'b0010;
-//            sw2<=t2;end
-//            else if(seg2==4'b0010)begin seg2<=4'b0100;
-//            sw2<=t3;end
-//            else  begin seg2<=4'b1000;
-//            sw2<=t4;end
-            pre_pulse1<=now_pulse1;
-            now_pulse1<=key_pulse;
-//            pre_pulse2<=now_pulse2;
-//            now_pulse2<=key_left; 
-//            pre_pulse3<=now_pulse3;
-//            now_pulse3<=key_right;
-            pre_pulse4<=now_pulse3;
-            now_pulse4<=key_select;      
-             if(~pre_pulse1 & now_pulse1)
-             mode<=~mode;  
-//             else if(~pre_pulse2 & now_pulse2)  
-//             begin
-//                 if(Test_case==4'b1000) Test_case<=4'b0001;
-//                 else Test_case<=Test_case+1'b1;
-//             end
-//             else if(~pre_pulse3 & now_pulse3)  
-//              begin
-//                  if(Test_case==4'b0001) Test_case<=4'b1000;
-//                  else Test_case<=Test_case-1'b1;
-//              end 
-               else if(~pre_pulse4 & now_pulse4)  
-                  select<=~select;
-              else 
-              begin
-              mode<=mode;
-              select<=select;
-              end                
+         regN   <=  regN + 1;   
+           if(transit) select<=1'b1;
+           if(select_button) select<=1'b0;               
         end  
     end
 
@@ -213,6 +136,10 @@ always @* begin
              t2=r_rdata[7:4];
              t3=r_rdata[11:8];
              t4=r_rdata[15:12];
+             t5=r_rdata[19:16];
+             t6=r_rdata[23:20];
+             t7=r_rdata[27:24];
+             t8=r_rdata[31:28];
             end
             else io_wdata=0;
          //IO_input
@@ -220,8 +147,11 @@ always @* begin
                if(select)
                    begin
                    if(addr_in[1:0]==2'b01)  r_wdata=16'h3ff;
-                   else if(mode&&addr_in[1:0]==2'b10)  r_wdata=16'h1ff;
-                   else if(!mode&&addr_in[1:0]==2'b10) r_wdata=16'h2ff;
+                   else if(left_button&&addr_in[1:0]==2'b10)  
+                   begin r_wdata=16'h1ff;
+                         
+                   end
+                   else if(right_button&&addr_in[1:0]==2'b10) r_wdata=16'h2ff;
                    else r_wdata=io_rdata;
                    end
               else
@@ -255,30 +185,6 @@ always @* begin
     endcase
 end
 
-
-
-//always @* 
-//begin
-//  if(~select) begin
-//  t1<=Test_case[3:0];
-//   t2<=4'b0000;
-//     t3<=4'b0000;
-//     t4<=4'b0000;
-//  end
-//  else
-//  begin
-//     if(Test_case==4'b0001||Test_case==4'b0010)
-//     begin
-//     t1<=io_rdata[3:0];
-//     t2<=io_rdata[7:4];
-//     t3<=io_rdata[11:8];
-//     t4<=io_rdata[15:12];
-//     end
-//  end
-//end
-
-//scan_seg three_seg1(.rst(rst), .clk(old_clk), .in3(t8), .in2(t7), .in1(t6), .in0(t5), .segs(seg), .seg_out(seg_out));
-//scan_seg three_seg2(.rst(rst), .clk(old_clk), .in3(t4), .in2(t3), .in1(t2), .in0(t1), .segs(seg2), .seg_out(seg_out2));
 light_7seg_tube seg_tube(.sw(sw),.seg_out(seg_out));
 light_7seg_tube seg_tube2(.sw(sw2),.seg_out(seg_out2));
 endmodule

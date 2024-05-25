@@ -63,6 +63,6 @@ module Test_IO(
 //    end
     
     initial begin
-    #30 switch= 16'h0;
+    #30 switch= 16'h1;
     end
 endmodule

@@ -24,7 +24,7 @@ module ALU(
  input [31:0] ReadData1,
    input [31:0] ReadData2,
    input [31:0] imm32,
-   input [1:0] ALUOp,
+   input [2:0] ALUOp,
    input [6:0] funct7,
    input [2:0] funct3,
    input ALUSrc,

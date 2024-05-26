@@ -34,9 +34,10 @@ output [3:0]seg,
 output [7:0] seg_out2,
 output [3:0]seg2
 );
-wire Branch,Zero,ALUsrc,MemRead,MemWrite,MemtoReg,RegWrite,Jump,mRead,mWrite;
+wire Branch,Zero,ALUsrc,MemRead,MemWrite,MemtoReg,RegWrite,mRead,mWrite;
+wire Jump;
 wire clk;
-wire[1:0] ALUOp;
+wire[2:0] ALUOp;
 wire[31:0] PC;
 wire[31:0] instruction;  
 wire[31:0] dout;
@@ -45,6 +46,7 @@ wire[31:0]Read_Data2;
 wire [6:0]funct7;
 wire[2:0] funct3;
 wire [31:0] imm32;
+wire [31:0] immediateJump;
 wire [31:0]ALUResult;
 wire [31:0]addr_out;
 wire [31:0]write_data;
@@ -57,6 +59,7 @@ IFetch ifetch_instance (
         .clk(clk),
         .rst(rst),
         .imm32(imm32),
+        .immediateJump(immediateJump),
         .Branch(Branch),
         .Zero(Zero),
         .Jump(Jump),
@@ -87,6 +90,7 @@ Controller controller_instance (
       .read_data1(Read_Data1),
       .read_data2(Read_Data2),
       .imm32(imm32),
+      .immediateJump(immediateJump),
       .funct7(funct7),
       .funct3(funct3)
   );

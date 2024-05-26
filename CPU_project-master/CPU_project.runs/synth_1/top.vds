@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat May 25 22:07:48 2024
-# Process ID: 27800
+# Start of session at: Sun May 26 17:51:20 2024
+# Process ID: 55960
 # Current directory: D:/vivado/CPU_project-master/CPU_project.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/vivado/CPU_project-master/CPU_project.runs/synth_1/top.vds
@@ -15,41 +15,41 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 53428 
+INFO: Helper process launched with PID 52496 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 343.957 ; gain = 101.129
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 344.641 ; gain = 101.066
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/realtime/cpuclk_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/realtime/cpuclk_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'IFetch' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v:23]
-INFO: [Synth 8-638] synthesizing module 'InstMem' [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/realtime/InstMem_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'InstMem' (2#1) [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/realtime/InstMem_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'InstMem' [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/realtime/InstMem_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'InstMem' (2#1) [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/realtime/InstMem_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'IFetch' (3#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v:23]
 INFO: [Synth 8-638] synthesizing module 'Controller' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Controller.v:23]
 INFO: [Synth 8-256] done synthesizing module 'Controller' (4#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Controller.v:23]
 INFO: [Synth 8-638] synthesizing module 'Decoder' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:23]
-INFO: [Synth 8-638] synthesizing module 'ImmGen' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:80]
-INFO: [Synth 8-256] done synthesizing module 'ImmGen' (5#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:80]
-INFO: [Synth 8-638] synthesizing module 'WB' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:188]
-INFO: [Synth 8-256] done synthesizing module 'WB' (6#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:188]
-INFO: [Synth 8-638] synthesizing module 'RegisterFile' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:121]
-INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (7#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:121]
+INFO: [Synth 8-638] synthesizing module 'ImmGen' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:84]
+WARNING: [Synth 8-567] referenced signal 'new_PC' should be on the sensitivity list [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:96]
+INFO: [Synth 8-256] done synthesizing module 'ImmGen' (5#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:84]
+INFO: [Synth 8-638] synthesizing module 'WB' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:208]
+INFO: [Synth 8-256] done synthesizing module 'WB' (6#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:208]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:141]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (7#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:141]
 INFO: [Synth 8-256] done synthesizing module 'Decoder' (8#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:23]
 INFO: [Synth 8-638] synthesizing module 'ALU' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALU.v:23]
 INFO: [Synth 8-638] synthesizing module 'MUX' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MUX.v:23]
 INFO: [Synth 8-256] done synthesizing module 'MUX' (9#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MUX.v:23]
 INFO: [Synth 8-638] synthesizing module 'ALUControl' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUControl.v:23]
-INFO: [Synth 8-226] default block is never used [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUControl.v:30]
 WARNING: [Synth 8-151] case item 3'b010 is unreachable [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUControl.v:32]
 INFO: [Synth 8-256] done synthesizing module 'ALUControl' (10#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUControl.v:23]
 INFO: [Synth 8-638] synthesizing module 'ALUMain' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUMain.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUMain.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUMain.v:50]
 INFO: [Synth 8-256] done synthesizing module 'ALUMain' (11#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUMain.v:23]
 INFO: [Synth 8-256] done synthesizing module 'ALU' (12#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALU.v:23]
 INFO: [Synth 8-638] synthesizing module 'DMem' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/DMem.v:23]
-INFO: [Synth 8-638] synthesizing module 'RAM' [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/realtime/RAM_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'RAM' (13#1) [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/realtime/RAM_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'RAM' [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/realtime/RAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (13#1) [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/realtime/RAM_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'DMem' (14#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/DMem.v:23]
 INFO: [Synth 8-638] synthesizing module 'MemOrIO' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:22]
 	Parameter N bound to: 18 - type: integer 
@@ -59,7 +59,7 @@ WARNING: [Synth 8-5788] Register regN_reg in module MemOrIO is has both Set and 
 WARNING: [Synth 8-3848] Net LEDCtrl in module/entity MemOrIO does not have driver. [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:43]
 WARNING: [Synth 8-3848] Net SwitchCtrl in module/entity MemOrIO does not have driver. [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:44]
 INFO: [Synth 8-256] done synthesizing module 'MemOrIO' (16#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:22]
-WARNING: [Synth 8-350] instance 'memorio' of module 'MemOrIO' requires 25 connections, but only 23 given [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/top.v:95]
+WARNING: [Synth 8-350] instance 'memorio' of module 'MemOrIO' requires 25 connections, but only 23 given [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/top.v:99]
 INFO: [Synth 8-256] done synthesizing module 'top' (17#1) [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design MemOrIO has unconnected port LEDCtrl
 WARNING: [Synth 8-3331] design MemOrIO has unconnected port SwitchCtrl
@@ -108,6 +108,7 @@ WARNING: [Synth 8-3331] design DMem has unconnected port instruction[10]
 WARNING: [Synth 8-3331] design DMem has unconnected port instruction[9]
 WARNING: [Synth 8-3331] design DMem has unconnected port instruction[8]
 WARNING: [Synth 8-3331] design DMem has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port rst
 WARNING: [Synth 8-3331] design Controller has unconnected port instruction[24]
 WARNING: [Synth 8-3331] design Controller has unconnected port instruction[23]
 WARNING: [Synth 8-3331] design Controller has unconnected port instruction[22]
@@ -124,7 +125,7 @@ WARNING: [Synth 8-3331] design Controller has unconnected port instruction[9]
 WARNING: [Synth 8-3331] design Controller has unconnected port instruction[8]
 WARNING: [Synth 8-3331] design Controller has unconnected port instruction[7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 396.008 ; gain = 153.180
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 396.969 ; gain = 153.395
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -134,24 +135,22 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 396.008 ; gain = 153.180
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 396.969 ; gain = 153.395
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp3/cpuclk_in_context.xdc] for cell 'clk1'
-Finished Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp3/cpuclk_in_context.xdc] for cell 'clk1'
-Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp4/RAM_in_context.xdc] for cell 'dmem/udram'
-Finished Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp4/RAM_in_context.xdc] for cell 'dmem/udram'
-Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp5/InstMem_in_context.xdc] for cell 'ifetch_instance/imem'
-Finished Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp5/InstMem_in_context.xdc] for cell 'ifetch_instance/imem'
+Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp3/cpuclk_in_context.xdc] for cell 'clk1'
+Finished Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp3/cpuclk_in_context.xdc] for cell 'clk1'
+Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp4/RAM_in_context.xdc] for cell 'dmem/udram'
+Finished Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp4/RAM_in_context.xdc] for cell 'dmem/udram'
+Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp5/InstMem_in_context.xdc] for cell 'ifetch_instance/imem'
+Finished Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp5/InstMem_in_context.xdc] for cell 'ifetch_instance/imem'
 Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc]
-WARNING: [Vivado 12-584] No ports matched 'oldClk'. [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc:65]
-WARNING: [Vivado 12-584] No ports matched 'oldClk'. [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc:66]
-WARNING: [Vivado 12-584] No ports matched 'seg_en'. [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc:84]
-WARNING: [Vivado 12-584] No ports matched 'seg_en'. [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'seg_en'. [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'seg_en'. [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc:91]
 Finished Parsing XDC File [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado/CPU_project-master/CPU_project.srcs/constrs_1/new/initialconstrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -161,36 +160,38 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 738.863 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 738.871 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 738.863 ; gain = 496.035
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 738.871 ; gain = 495.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 738.863 ; gain = 496.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 738.871 ; gain = 495.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for old_clk. (constraint file  D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp3/cpuclk_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for old_clk. (constraint file  D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-27800-supreme/dcp3/cpuclk_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for old_clk. (constraint file  D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp3/cpuclk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for old_clk. (constraint file  D:/vivado/CPU_project-master/CPU_project.runs/synth_1/.Xil/Vivado-55960-supreme/dcp3/cpuclk_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for clk1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for dmem/udram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ifetch_instance/imem. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 738.863 ; gain = 496.035
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 738.871 ; gain = 495.297
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "next_PC" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element PC_reg was removed.  [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v:34]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg was removed.  [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v:36]
 INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "ALUsrc" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "MemRead" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "RegWrite" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:103]
+INFO: [Synth 8-5546] ROM "immediateJump" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "registers_reg[29]" won't be mapped to RAM because it is too sparse
@@ -225,25 +226,25 @@ INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "ALUControlResult" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "io_wdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mWrite" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element regN_reg was removed.  [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:122]
-WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUMain.v:50]
-WARNING: [Synth 8-327] inferring latch for variable 'mRead_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:176]
-WARNING: [Synth 8-327] inferring latch for variable 'mWrite_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:172]
-WARNING: [Synth 8-327] inferring latch for variable 'addr_out_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:170]
+WARNING: [Synth 8-327] inferring latch for variable 'immediateJump_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/Decoder.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUMain.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'mRead_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:179]
+WARNING: [Synth 8-327] inferring latch for variable 'mWrite_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:174]
+WARNING: [Synth 8-327] inferring latch for variable 'addr_out_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:172]
 WARNING: [Synth 8-327] inferring latch for variable 'r_wdata_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:149]
-WARNING: [Synth 8-327] inferring latch for variable 'write_data_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:171]
-WARNING: [Synth 8-327] inferring latch for variable 'io_wdata_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:134]
+WARNING: [Synth 8-327] inferring latch for variable 'write_data_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:173]
 WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:142]
 WARNING: [Synth 8-327] inferring latch for variable 't7_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:141]
 WARNING: [Synth 8-327] inferring latch for variable 't6_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:140]
 WARNING: [Synth 8-327] inferring latch for variable 't5_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:139]
-WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:135]
 WARNING: [Synth 8-327] inferring latch for variable 't4_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:138]
 WARNING: [Synth 8-327] inferring latch for variable 't3_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:137]
 WARNING: [Synth 8-327] inferring latch for variable 't2_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:136]
+WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:135]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 738.863 ; gain = 496.035
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 738.871 ; gain = 495.297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -256,29 +257,26 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 5     
 	   3 Input     32 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 7     
-	   9 Input     32 Bit        Muxes := 1     
-	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 10    
+	   7 Input     32 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 6     
-	   3 Input     16 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
-	   4 Input      4 Bit        Muxes := 4     
+	   6 Input      4 Bit        Muxes := 1     
 	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 5     
+	  10 Input      3 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
-	   9 Input      2 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 39    
-	   9 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 45    
+	  10 Input      1 Bit        Muxes := 7     
 	   7 Input      1 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 7     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -288,20 +286,24 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module IFetch 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 Module Controller 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   9 Input      2 Bit        Muxes := 1     
-	   9 Input      1 Bit        Muxes := 6     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 6     
 Module ImmGen 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
 +---Muxes : 
-	   9 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
 Module WB 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -318,7 +320,7 @@ Detailed RTL Component Info :
 Module ALUControl 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
 	   8 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
 Module ALUMain 
@@ -340,15 +342,12 @@ Detailed RTL Component Info :
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 6     
-	   3 Input     16 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 3     
 	   4 Input      4 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 5     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
-	   3 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 11    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -373,9 +372,10 @@ INFO: [Synth 8-5546] ROM "controller_instance/MemRead" won't be mapped to RAM be
 INFO: [Synth 8-5546] ROM "controller_instance/MemWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "controller_instance/RegWrite" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5546] ROM "controller_instance/Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decoder_instance/immgen/immediateJump" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "alu/alucontrol/ALUControlResult" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "memorio/io_wdata" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element ifetch_instance/PC_reg was removed.  [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v:34]
+INFO: [Synth 8-5546] ROM "memorio/mWrite" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element ifetch_instance/PC_reg was removed.  [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/IFetch.v:36]
 WARNING: [Synth 8-6014] Unused sequential element memorio/regN_reg was removed.  [D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/MemOrIO.v:122]
 WARNING: [Synth 8-3332] Sequential element (memorio/mRead_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (memorio/addr_out_reg[31]) is unused and will be removed from module top.
@@ -396,10 +396,8 @@ WARNING: [Synth 8-3332] Sequential element (memorio/addr_out_reg[17]) is unused 
 WARNING: [Synth 8-3332] Sequential element (memorio/addr_out_reg[16]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (memorio/addr_out_reg[15]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (memorio/addr_out_reg[14]) is unused and will be removed from module top.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\ifetch_instance/PC_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (ifetch_instance/PC_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 738.863 ; gain = 496.035
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 738.871 ; gain = 495.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -429,13 +427,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk1/clk_out1' to pin 'clk1/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 759.090 ; gain = 516.262
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:50 . Memory (MB): peak = 765.617 ; gain = 522.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 840.109 ; gain = 597.281
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:01:01 . Memory (MB): peak = 850.887 ; gain = 607.312
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -447,7 +445,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -471,7 +469,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -484,7 +482,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -496,25 +494,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:55 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:55 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -536,19 +534,19 @@ Report Cell Usage:
 |1     |InstMem |     1|
 |2     |RAM     |     1|
 |3     |cpuclk  |     1|
-|4     |BUFG    |     1|
-|5     |CARRY4  |    51|
+|4     |BUFG    |     3|
+|5     |CARRY4  |    67|
 |6     |LUT1    |     4|
-|7     |LUT2    |    99|
-|8     |LUT3    |   126|
-|9     |LUT4    |   211|
-|10    |LUT5    |   203|
-|11    |LUT6    |  1224|
-|12    |MUXF7   |   162|
+|7     |LUT2    |    97|
+|8     |LUT3    |   155|
+|9     |LUT4    |   214|
+|10    |LUT5    |   198|
+|11    |LUT6    |  1122|
+|12    |MUXF7   |   168|
 |13    |MUXF8   |    64|
-|14    |FDCE    |  1024|
+|14    |FDCE    |  1025|
 |15    |FDRE    |    18|
-|16    |LD      |   128|
+|16    |LD      |   144|
 |17    |IBUF    |    21|
 |18    |OBUF    |    40|
 +------+--------+------+
@@ -557,38 +555,38 @@ Report Instance Areas:
 +------+-------------------+----------------+------+
 |      |Instance           |Module          |Cells |
 +------+-------------------+----------------+------+
-|1     |top                |                |  3441|
+|1     |top                |                |  3405|
 |2     |  alu              |ALU             |     1|
 |3     |    alumain        |ALUMain         |     1|
-|4     |  decoder_instance |Decoder         |  1736|
-|5     |    RF             |RegisterFile    |  1730|
-|6     |    immgen         |ImmGen          |     6|
-|7     |  dmem             |DMem            |    40|
-|8     |  ifetch_instance  |IFetch          |  1409|
-|9     |  memorio          |MemOrIO         |   192|
-|10    |    seg_tube2      |light_7seg_tube |    22|
+|4     |  decoder_instance |Decoder         |  1790|
+|5     |    RF             |RegisterFile    |  1736|
+|6     |    immgen         |ImmGen          |    54|
+|7     |  dmem             |DMem            |    32|
+|8     |  ifetch_instance  |IFetch          |  1344|
+|9     |  memorio          |MemOrIO         |   173|
+|10    |    seg_tube2      |light_7seg_tube |    17|
 +------+-------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:55 . Memory (MB): peak = 880.898 ; gain = 638.070
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:01:04 . Memory (MB): peak = 896.863 ; gain = 653.289
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 880.898 ; gain = 295.215
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:55 . Memory (MB): peak = 880.898 ; gain = 638.070
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:01:00 . Memory (MB): peak = 896.863 ; gain = 311.387
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 896.863 ; gain = 653.289
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 426 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 464 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 128 instances were transformed.
-  LD => LDCE: 128 instances
+  A total of 144 instances were transformed.
+  LD => LDCE: 144 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-105 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+106 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:58 . Memory (MB): peak = 880.898 ; gain = 649.605
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:01:08 . Memory (MB): peak = 896.863 ; gain = 664.770
 INFO: [Common 17-1381] The checkpoint 'D:/vivado/CPU_project-master/CPU_project.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 880.898 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat May 25 22:08:49 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 896.863 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun May 26 17:52:31 2024...

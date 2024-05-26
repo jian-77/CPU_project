@@ -24,7 +24,9 @@ module IFetch(
 input clk,
 input rst,
 input [31:0] imm32,
-input Branch,Zero,Jump,
+input [31:0] immediateJump,
+input Branch,Zero,
+input Jump,
 output reg [31:0] PC,
 output  [31:0] instruction
     );
@@ -46,10 +48,14 @@ output  [31:0] instruction
             end
         else
         begin
-         if ((Branch&&Zero)||Jump)
+         if (Branch&&Zero)
              begin
               next_PC<=PC+imm32;
               end
+          else if (Jump)
+             begin
+             next_PC<=immediateJump;
+             end
            else next_PC<=PC+4;
         end
 

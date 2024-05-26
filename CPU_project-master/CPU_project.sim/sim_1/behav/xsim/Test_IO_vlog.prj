@@ -13,7 +13,6 @@ verilog xil_defaultlib  --include "../../../../CPU_project.srcs/sources_1/ip/cpu
 "../../../../CPU_project.srcs/sources_1/new/IFetch.v" \
 "../../../../CPU_project.srcs/sources_1/new/MUX.v" \
 "../../../../CPU_project.srcs/sources_1/new/MemOrIO.v" \
-"../../../../CPU_project.srcs/sources_1/new/debounce_button.v" \
 "../../../../CPU_project.srcs/sources_1/new/light_7seg_tube.v" \
 "../../../../CPU_project.srcs/sources_1/new/top.v" \
 "../../../../CPU_project.srcs/sim_1/new/Test_IO.v" \

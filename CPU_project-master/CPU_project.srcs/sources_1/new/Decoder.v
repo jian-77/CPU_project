@@ -32,6 +32,7 @@ module Decoder(
     output [31:0] read_data1, // 读出的数据1
     output [31:0] read_data2, // 读出的数据2
     output wire [31:0] imm32,    // 立即数
+    output wire [31:0] immediateJump,   // 立即数
     output wire [6:0] funct7,
     output wire [2:0] funct3
 );
@@ -51,9 +52,12 @@ assign funct7 = instruction[31:25];
 
 
 ImmGen immgen(
+   .rst(rst),
      .PC(PC),
     .instruction(instruction),
-    .immediate(imm32)
+    .immediate(imm32),
+    .immediateJump(immediateJump),
+    .read_data1(read_data1)
 );
 
 WB wb(
@@ -78,11 +82,22 @@ RegisterFile RF(
 endmodule
 
 module ImmGen(
+input rst,
 input [31:0] PC,/////////////////////////////修改
 input [31:0] instruction,
-output reg [31:0] immediate
+input [31:0] read_data1,
+output reg [31:0] immediate,
+output reg [31:0] immediateJump
     );
     wire [6:0] opcode = instruction[6:0]; //提取opcode
+    reg[31:0]old_PC;
+    reg[31:0]new_PC;
+
+     always@(PC)
+       begin
+            old_PC<=new_PC;
+            new_PC<=PC;
+       end
     
     always @(*) begin
         case(opcode)
@@ -108,8 +123,13 @@ output reg [31:0] immediate
                 immediate = PC+{instruction[31:12], 12'b0};
             end
             7'b1101111: begin // J
-                immediate = {{11{instruction[31]}}, instruction[31], instruction[19:12], instruction[20], instruction[30:21], 1'b0};
+                immediate = old_PC+4;
+                immediateJump=PC+{{11{instruction[31]}}, instruction[31], instruction[19:12], instruction[20], instruction[30:21], 1'b0};
             end
+             7'b1100111: begin // J
+               immediate = old_PC+4;
+               immediateJump= {{20{instruction[31]}},instruction[31:20]}+read_data1;
+           end
             default: begin
                 immediate = 32'b0;
             end

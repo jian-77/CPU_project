@@ -41,6 +41,7 @@ module ALUMain(
            4'b1000: ALUResult=ReadData1<MUXResult?1'b1:1'b0;//slt
            4'b1001: ALUResult=$unsigned(ReadData1)<$unsigned(MUXResult)?1'b1:1'b0;//slt
            4'b1010:ALUResult=MUXResult;
+           
            default:ALUResult=0;
        endcase
     end

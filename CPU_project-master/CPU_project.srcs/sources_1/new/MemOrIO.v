@@ -101,7 +101,7 @@ reg [4:0]sw2;
             begin
                 seg =4'b0000;
                 seg2=4'b0001;
-                sw2={1'b0,t1};
+                sw2={1'b0,io_rdata[3:0]};
             end
         else 
             begin
@@ -165,12 +165,15 @@ always @* begin
                   end         
             end
         end
-        20'h00000: begin
+        default: begin
+            io_wdata=0;
+            r_wdata[15:0]=0;
             if(write)begin
                 addr_out=addr_in;
                 write_data=r_rdata;
                 mWrite=write;
             end
+            else mWrite=0;
             if(read)begin 
                 addr_out=addr_in;
                 mRead=read;
@@ -178,10 +181,7 @@ always @* begin
             end
         end
         
-        default:begin
-        io_wdata=0;
-        r_wdata[15:0]=0;
-        end
+
     endcase
 end
 

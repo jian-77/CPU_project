@@ -50,6 +50,18 @@ add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_sw.coe
 add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_9.coe
 add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_round.coe
 add_files d:/vivado/CPU_project/Test/uart_tools/Test_io_14.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_jump_1.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_fib.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_sw.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_sw2.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_fib_second.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_fib_last.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_fib3.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_fib_last2.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_fib5.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_jump.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_jump3.coe
+add_files d:/vivado/CPU_project/Test/uart_tools/Test_last.coe
 read_verilog -library xil_defaultlib {
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALU.v
   D:/vivado/CPU_project-master/CPU_project.srcs/sources_1/new/ALUControl.v

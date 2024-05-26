@@ -21,14 +21,14 @@
 
 
 module ALUControl(
- input [1:0] ALUOp,
+ input [2:0] ALUOp,
    input [6:0] funct7,
    input [2:0] funct3,
    output reg [3:0] ALUControlResult
    );
    always @ *
        case(ALUOp)
-           2'b00://R or I
+           3'b000://R or I
                case(funct3)
                   3'b000: ALUControlResult= 4'b0000;//add
                    3'b100:ALUControlResult= 4'b0010;//xor
@@ -46,10 +46,11 @@ module ALUControl(
                    3'b010:ALUControlResult= 4'b1001;//sltu
                    default:ALUControlResult= 4'b1111;
                endcase
-           2'b01: ALUControlResult= 4'b0000;//lw or sw
-           2'b10://B
+           3'b001: ALUControlResult= 4'b0000;//lw or sw
+           3'b010://B
                ALUControlResult= 4'b0001;
-           2'b11: ALUControlResult= 4'b1010;//U
+           3'b011: ALUControlResult= 4'b1010;//U
+           3'b100: ALUControlResult= 4'b1010;//J
         default:ALUControlResult=4'b1111;
      endcase     
 endmodule

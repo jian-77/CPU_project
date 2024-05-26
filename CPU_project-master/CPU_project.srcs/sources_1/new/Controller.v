@@ -22,8 +22,9 @@
 
 module Controller(
 input [31:0] instruction,
-output reg Branch,ALUsrc,MemRead,MemWrite,MemtoReg,RegWrite,Jump,
-output reg [1:0] ALUOp
+output reg Branch,ALUsrc,MemRead,MemWrite,MemtoReg,RegWrite,
+output reg Jump,
+output reg [2:0] ALUOp
     );
     
   always @(*) begin
@@ -31,8 +32,8 @@ output reg [1:0] ALUOp
              7'b0110011://R
                  begin 
                  Branch = 1'b0;
-                 if(instruction[14:12]==3'b000&&instruction[31:25]==7'b0100000) ALUOp =2'b10;
-                 else ALUOp =2'b00;
+                 if(instruction[14:12]==3'b000&&instruction[31:25]==7'b0100000) ALUOp =3'b010;
+                 else ALUOp =3'b000;
                  ALUsrc =1'b0;
                  MemRead =1'b0;
                  MemWrite =1'b0;
@@ -43,7 +44,7 @@ output reg [1:0] ALUOp
             7'b0000011://LW
                  begin 
                 Branch = 1'b0;
-                ALUOp =2'b01;
+                ALUOp =3'b001;
                 ALUsrc =1'b1;
                 MemRead =1'b1;
                 MemWrite =1'b0;
@@ -54,7 +55,7 @@ output reg [1:0] ALUOp
               7'b0100011://SW
                  begin 
                  Branch = 1'b0;
-                ALUOp =2'b01;
+                ALUOp =3'b001;
                 ALUsrc =1'b1;
                 MemRead =1'b0;
                 MemWrite =1'b1;
@@ -65,7 +66,7 @@ output reg [1:0] ALUOp
              7'b1100011://B
                  begin 
                 Branch = 1'b1;
-                ALUOp =2'b10;
+                ALUOp =3'b010;
                 ALUsrc =1'b0;
                 MemRead =1'b0;
                 MemWrite =1'b0;
@@ -76,7 +77,7 @@ output reg [1:0] ALUOp
               7'b0110111://lui
                  begin 
                 Branch = 1'b0;
-                ALUOp =2'b11;/////
+                ALUOp =3'b011;/////
                 ALUsrc =1'b1;/////
                 MemRead =1'b0;
                 MemWrite =1'b0;
@@ -87,7 +88,7 @@ output reg [1:0] ALUOp
                7'b0010111://auipc
                  begin 
                 Branch = 1'b0;
-                ALUOp =2'b11;/////
+                ALUOp =3'b011;/////
                 ALUsrc =1'b1;/////
                 MemRead =1'b0;
                 MemWrite =1'b0;
@@ -97,19 +98,30 @@ output reg [1:0] ALUOp
                  end
                7'b1101111://J
                  begin 
-                 Branch = 1'b0;
-                ALUOp =2'b01;/////
-                ALUsrc =1'b0;////
+                Branch = 1'b0;
+                ALUOp =3'b100;/////
+                ALUsrc =1'b1;////
                 MemRead =1'b0;
                 MemWrite =1'b0;
                 MemtoReg =1'b0;
                 RegWrite =1'b1;
                 Jump=1'b1;
                  end
+                 7'b1100111://Jr
+                  begin 
+                  Branch = 1'b0;
+                 ALUOp =3'b100;/////
+                 ALUsrc =1'b1;////
+                 MemRead =1'b0;
+                 MemWrite =1'b0;
+                 MemtoReg =1'b0;
+                 RegWrite =1'b1;
+                 Jump=1'b1;
+                 end
                  7'b0010011://addi
                  begin 
                 Branch = 1'b0;
-                ALUOp =2'b00;
+                ALUOp =3'b000;
                 ALUsrc =1'b1;
                 MemRead =1'b0;
                 MemWrite =1'b0;
@@ -120,7 +132,7 @@ output reg [1:0] ALUOp
               default:
                  begin 
                  Branch = 1'b0;
-                ALUOp =2'b11;
+                ALUOp =3'b011;
                 ALUsrc =1'b0;
                 MemRead =1'b0;
                 MemWrite =1'b0;

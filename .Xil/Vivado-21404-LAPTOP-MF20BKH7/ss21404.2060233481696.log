@@ -1,0 +1,31 @@
+srcscan starts
+INFO: analyzing module ALU (VERI-9002)
+INFO: analyzing module MUX (VERI-9002)
+INFO: analyzing module ALUControl (VERI-9002)
+INFO: analyzing module ALUMain (VERI-9002)
+INFO: analyzing module EXtoMEMorIFetch (VERI-9002)
+INFO: analyzing module ID (VERI-9002)
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ID.v(42): INFO: undeclared symbol 'memToReg', assumed default net type 'wire' (VERI-2561)
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ID.v(59): INFO: undeclared symbol 'regWrite', assumed default net type 'wire' (VERI-2561)
+INFO: analyzing module ImmGen (VERI-9002)
+INFO: analyzing module RegisterFile (VERI-9002)
+INFO: analyzing module WB (VERI-9002)
+INFO: analyzing module Controller (VERI-9002)
+INFO: analyzing module IFetch (VERI-9002)
+INFO: analyzing module IFtoID (VERI-9002)
+INFO: analyzing module PC (VERI-9002)
+INFO: analyzing module top (VERI-9002)
+Listing tops:
+VeriTop library:xil_defaultlib mod:ALU
+VeriTop library:xil_defaultlib mod:EXtoMEMorIFetch
+VeriTop library:xil_defaultlib mod:ID
+VeriTop library:xil_defaultlib mod:PC
+VeriTop library:xil_defaultlib mod:top
+END of tops
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALU.v(1): INFO: compiling module 'ALU_default' (VERI-1018)
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/EXtoMEMorIFetch.v(23): INFO: compiling module 'EXtoMEMorIFetch_default' (VERI-1018)
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ID.v(1): INFO: compiling module 'ID_default' (VERI-1018)
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/PC.v(23): INFO: compiling module 'PC_default' (VERI-1018)
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/top.v(2): INFO: compiling module 'top_default' (VERI-1018)
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/IFetch.v(14): WARNING: Module <InstMem> not found while processing module instance <imem> (VERI-1063)
+srcscan exits with return value 0

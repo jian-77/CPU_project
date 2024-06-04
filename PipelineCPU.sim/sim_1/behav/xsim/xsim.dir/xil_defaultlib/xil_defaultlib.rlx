@@ -1,0 +1,21 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.gen/sources_1/ip/DRAM/sim/DRAM.v,1716464169,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.gen/sources_1/ip/InstMem/sim/InstMem.v,,DRAM,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.gen/sources_1/ip/InstMem/sim/InstMem.v,1716467290,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.gen/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,,InstMem,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.gen/sources_1/ip/cpuclk/cpuclk.v,1716467822,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALU.v,,cpuclk,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.gen/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,1716467822,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.gen/sources_1/ip/cpuclk/cpuclk.v,,cpuclk_clk_wiz,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sim_1/new/tb.v,1716466323,verilog,,,,tb,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ALU.v,1716197547,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/DMem.v,,ALU;ALUControl;ALUMain;MUX,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/DMem.v,1716463170,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/EXtoMEMorIFetch.v,,DMem,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/EXtoMEMorIFetch.v,1716219594,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/Forwarding.v,,EXtoMEMorIFetch,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/Forwarding.v,1716428451,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ID.v,,Forwarding,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/ID.v,1716454728,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/IFetch.v,,Controller;ID;ImmGen;RegisterFile;Stall;WB,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/IFetch.v,1716168667,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/IFtoID.v,,IFetch,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/IFtoID.v,1716204558,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/MemOrIO.v,,IFtoID,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/MemOrIO.v,1716463260,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/MemtoWB.v,,MemOrIO,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/MemtoWB.v,1716452145,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/PC.v,,MemtoWB,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/PC.v,1716263130,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/top.v,,PC,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,
+D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sources_1/new/top.v,1716463540,verilog,,D:/2024SPR/verilog/PipelineCPU/PipelineCPU.srcs/sim_1/new/tb.v,,top,,,../../../../PipelineCPU.ip_user_files/ipstatic,,,,,

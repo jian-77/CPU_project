@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 23 17:06:08 2024
+# Process ID: 20196
+# Current directory: D:/2024SPR/verilog/PipelineCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14748 D:\2024SPR\verilog\PipelineCPU\PipelineCPU.xpr
+# Log file: D:/2024SPR/verilog/PipelineCPU/vivado.log
+# Journal file: D:/2024SPR/verilog/PipelineCPU\vivado.jou
+# Running On: LAPTOP-MF20BKH7, OS: Windows, CPU Frequency: 3992 MHz, CPU Physical cores: 16, Host memory: 16345 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/2024SPR/verilog/PipelineCPU/PipelineCPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+export_ip_user_files -of_objects  [get_files D:/2024SPR/verilog/SingleCycleCPU/SingleCycleCPU.srcs/constrs_1/new/initialConstrant.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/2024SPR/verilog/SingleCycleCPU/SingleCycleCPU.srcs/constrs_1/new/initialConstrant.xdc
+launch_simulation

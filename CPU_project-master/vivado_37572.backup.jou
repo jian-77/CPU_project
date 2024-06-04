@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 29 09:28:41 2024
+# Process ID: 37572
+# Current directory: D:/vivado/CPU_project-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent60176 D:\vivado\CPU_project-master\CPU_project.xpr
+# Log file: D:/vivado/CPU_project-master/vivado.log
+# Journal file: D:/vivado/CPU_project-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/CPU_project-master/CPU_project.xpr
+update_compile_order -fileset sources_1

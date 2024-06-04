@@ -49,19 +49,7 @@ module Test_IO(
     forever #5 oldClk=~oldClk;
     end
     
-//    initial begin
-//    transit=1'b0;
-//    #3500 transit=1'b1;
-//    #100 transit=1'b0;
-    
-//    #400 transit=1'b1;
-//    #100 transit=1'b0;
-    
-//     #200 transit=1'b1;
-//    #100 transit=1'b0;
-    
-//    end
-    
+
     initial begin
     #30 switch= 16'h1;
     end

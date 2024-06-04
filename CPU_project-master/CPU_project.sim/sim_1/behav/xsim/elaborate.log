@@ -5,4 +5,36 @@ Using 2 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.InstMem
+Compiling module xil_defaultlib.IFetch
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.ALUMain
+Compiling module xil_defaultlib.ALU
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.DMem
+Compiling module xil_defaultlib.light_7seg_tube
+Compiling module xil_defaultlib.MemOrIO
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.Test_IO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_IO_behav

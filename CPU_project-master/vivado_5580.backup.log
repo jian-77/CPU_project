@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 31 16:51:39 2024
+# Process ID: 5580
+# Current directory: D:/vivado/CPU_project-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14524 D:\vivado\CPU_project-master\CPU_project.xpr
+# Log file: D:/vivado/CPU_project-master/vivado.log
+# Journal file: D:/vivado/CPU_project-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado/CPU_project-master/CPU_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/¼û/Desktop/uart_tools/uart_tools/SEU_CSE_507_user_uart_bmpg_1.3'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/vivado/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 842.211 ; gain = 115.391
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 16:58:47 2024...
